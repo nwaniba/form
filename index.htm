@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graduate Trainee Application</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <section class="container">
+        <header>
+            <h1>Food Concept Graduate Trainee Form</h1>
+        </header>
+        <section>
+            <h2>Fill Out The Form</h2>
+            <p>if your detail match our minimun requirement you be contacted for interview</p>
+            <form action="form-processor.html" method="get">
+                <label for="name">NAME <span class="required">*</span></label>
+                <input type="text" id="name" name="name" required autofocus placeholder="example: Samuel Dania" pattern="[a-zA-Z]+\s[a-zA-Z]+">
+
+                <label for="email">EMAIL <span class="required">*</span></label>
+                <input type="text" id="email" name="email" required placeholder="example :daniaomokhafe6@gmail.com" pattern="[a-zA-Z0-9]+@+[a-zA-Z0-9]+(\.[a-zA-Z]+)">
+
+                <label for="tel">PHONE NUMBER <span class="required">*</span></label>
+                <input type="text" id="tel" name="tel" required placeholder="example: 09000000000" pattern="[0-9]+">
+
+                <label for="resume">UPLOAD RESUME</label>
+                <input type="file" id="resume" name="upload your resume">
+
+                <label for="job position">PREFFERED JOB POSITION <span class="required">*</span></label>
+                <select name="JOB" id="jobs" name="job" required>
+                    <option value="choose">select</option>
+                    <option value="SM">shift manager</option>
+                    <option value="ARM">ASSISTANT RESTURANT MANAGER</option>
+                    <option value="SO">STORE SUPPORT</option>
+                    <option value="RM">RESTURANT MANAGER</option>
+                    <option value="OPM">AREA MANAGER</option>
+                </select>
+                <label for="Educational Background">Educational Background <span class="required">*</span></label>
+                <textarea name="Educational Background" id="Educational Background" cols="30" rows="10" required placeholder="type in your Educational Background here .............."></textarea>
+
+                <label for="Skill">SKILLS</label>
+                <div class="sk">
+                    <input type="checkbox" name="skills" id="skill">
+                    <label for="skill">Leadership</label>
+                    <input type="checkbox" id="Skill" name="skill">
+                    <label for="skill">Time Managment</label>
+                    <input type="checkbox" id="skill" name="skill">
+                    <label for="skill">Decision Making</label>
+                    <input type="checkbox" id="skill" name="skill">
+                    <label for="skill">Problem Solving</label>
+                    <input type="checkbox" id="skill" name="skill">
+                    <label for="skill">Communication</label>
+                    <input type="checkbox" id="skill" name="skill">
+                    <label for="skill">Organisation</label>
+                    <input type="checkbox" id="skill" name="skill">
+                    <label for="skill">Delegation</label>
+                </div>
+              
+                <label for="Years of Experience">Years of Experience <span class="required">*</span>
+                    <div class="yr">
+                        <input type="radio" id="Years" name="Years" required>
+                        <label for="Years of Experience">0-2yrs</label>
+                        <input type="radio" id="Years" name="Years">
+                        <label for="Years of Experience">3-5yrs</label>
+                        <input type="radio" id="Years" name="Years">
+                        <label for="Years of Experience">6-9yrs</label>
+                        <input type="radio" id="Years" name="Years">
+                        <label for="Years of Experience">10-15yrs</label>
+                    </div>
+                    
+
+                </label>
+
+                <label for="Are you willing to relocate?">Are you willing to relocate? <span class="required">*</span>
+                    <div class="rl">
+                        <input type="radio" id="Are you willing to relocate?" name="relocate" required >
+                        <label for="Are you willing to relocate?">YES</label>
+                        <input type="radio" id="Are you willing to relocate?" name="relocate">
+                        <label for="Are you willing to relocate?">NO</label>
+                    </div>
+                    
+                </label>
+                <input type="submit" value="Sumbit Application" name="submit">
+
+
+            </form>
+        </section>
+
+    </section>
+    
+</body>
+</html>
